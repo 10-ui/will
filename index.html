@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
   <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-8/js/5-8.js" defer></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
   <script src="js/fubuki.js" defer></script>
   <script src="js/main.js" defer></script>
   <title>Will | 日本電子専門学校Webデザイン科</title>
@@ -35,6 +37,15 @@
         <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=wnw8985b" target="_blank" rel="noopener noreferrer">LINEで友だちになる</a>
       </li>
     </ul>
+    <div class="swiper">
+      <!-- 必要に応じたwrapper -->
+      <div class="swiper-wrapper">
+        <!-- スライド -->
+        <div class="swiper-slide"><img src="img/slidePic/advice.JPG" alt=""></div>
+        <div class="swiper-slide"><img src="img/slidePic/allContents.JPG" alt=""></div>
+        <div class="swiper-slide"><img src="img/slidePic/casino.JPG" alt=""></div>
+      </div>
+    </div>
   </div>
     <header class="flex">
       <div class="menuBtn">
@@ -80,12 +91,12 @@
           だからこのクイズに答えて<br>
           今日のことをおさらいしよう！
         </p>
-          <button class="goBtn flex">
+          <a class="goBtn flex" href="quiz/index.html">
             <p class="btn-p">クイズにチャレンジする</p>
             <span class="material-symbols-rounded">
             directions_run
             </span>
-          </button>
+          </a>
       </section>
       <section class="week">
         <h3>Webデザイン科の一週間</h3>
@@ -97,12 +108,12 @@
           ある１年生の一週間の様子を<br>
           一緒に見てみよう！
         </p>
-          <button class="goBtn flex" onclick="loction.href=''">
+          <a class="goBtn flex">
             <p class="btn-p">一週間の様子を見に行く</p>
             <span class="material-symbols-rounded">
               follow_the_signs
             </span>
-          </button>
+          </a>
       </section>
     </article>
   </main>

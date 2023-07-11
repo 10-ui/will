@@ -23,7 +23,7 @@ p {
   text-align: center;
 }
 
-button {
+a {
   width: auto;
   margin: auto;
 }
@@ -202,7 +202,7 @@ main section .btn-p {
   margin: 0;
   padding-top: 0.15rem;
 }
-main section button {
+main section .goBtn {
   margin-bottom: 2rem;
   width: 100%;
   border-radius: 0.7rem;
@@ -211,12 +211,13 @@ main section button {
   color: #fff;
   font-weight: 700;
   border: none;
+  text-decoration: none;
 }
 
 .menu-list {
   text-align: center;
   list-style-type: none;
-  margin: 8rem 3rem;
+  margin: 8rem 3rem 5rem;
   padding: 0;
   font-family: "Zen Maru Gothic", sans-serif;
   font-weight: bold;
@@ -228,4 +229,10 @@ main section button {
 .menu-list li a {
   color: #00a5be;
   text-decoration: none;
+}
+
+.swiper {
+  width: 100%;
+  max-height: 260px;
+  overflow: hidden;
 }
