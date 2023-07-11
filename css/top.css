@@ -33,6 +33,35 @@ img {
   width: 100%;
 }
 
+.active::before {
+  width: 2rem !important;
+  left: 0.3rem !important;
+  bottom: 1.8rem !important;
+  transform: rotate(-45deg);
+}
+.active::after {
+  width: 2rem !important;
+  left: 0.3rem !important;
+  bottom: 1.8rem !important;
+  transform: rotate(45deg);
+}
+
+.menu-body {
+  visibility: hidden;
+  width: 100vw;
+  height: 100vh;
+  top: -110vh;
+  position: fixed;
+  background-color: #fff;
+  z-index: 998;
+  transition: all ease 0.4s;
+}
+
+.menu-body-ac {
+  visibility: visible;
+  top: 0;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -56,23 +85,23 @@ header .lineChar {
 }
 header .lineChar::before {
   content: "";
-  width: 2.5rem;
+  width: 2rem;
   height: 0.2rem;
   background-color: #4169e1;
   border-radius: 1rem;
   bottom: 1.5rem;
-  left: 0;
+  left: 0.25rem;
   position: absolute;
   transition: all ease 0.3s;
 }
 header .lineChar::after {
   content: "";
-  width: 2.5rem;
+  width: 2rem;
   height: 0.2rem;
   background-color: #4169e1;
   border-radius: 1rem;
   bottom: 2.2rem;
-  left: 0;
+  left: 0.25rem;
   position: absolute;
   transition: all ease 0.3s;
 }
@@ -184,31 +213,19 @@ main section button {
   border: none;
 }
 
-.active::before {
-  width: 2rem !important;
-  left: 0.3rem !important;
-  bottom: 1.8rem !important;
-  transform: rotate(-45deg);
+.menu-list {
+  text-align: center;
+  list-style-type: none;
+  margin: 8rem 3rem;
+  padding: 0;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: bold;
+  font-size: 120%;
 }
-.active::after {
-  width: 2rem !important;
-  left: 0.3rem !important;
-  bottom: 1.8rem !important;
-  transform: rotate(45deg);
+.menu-list li {
+  margin-bottom: 2rem;
 }
-
-.menu-body {
-  visibility: hidden;
-  width: 100vw;
-  height: 100vh;
-  top: -110vh;
-  position: fixed;
-  background-color: #fff;
-  z-index: 998;
-  transition: all ease 0.7s;
-}
-
-.menu-body-ac {
-  visibility: visible;
-  top: 0;
+.menu-list li a {
+  color: #00a5be;
+  text-decoration: none;
 }

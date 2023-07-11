@@ -96,33 +96,20 @@ main {
     }
   }
 }
-.active {
-  &::before {
-    width: 2rem !important;
-    left: .3rem !important;
-    bottom: 1.8rem !important;
-    transform: rotate(-45deg);
-  }
-  &::after {
-    width: 2rem !important;
-    left: .3rem !important;
-    bottom: 1.8rem !important;
-    transform: rotate(45deg);
-  }
-}
 
-.menu-body {
-  visibility: hidden;
-  width: 100vw;
-  height: 100vh;
-  top: -110vh;
-  position: fixed;
-  background-color: #fff;
-  z-index: 998;
-  transition: all ease .7s;
-}
-
-.menu-body-ac {
-  visibility: visible;
-  top: 0;
+.menu-list {
+  text-align: center;
+  list-style-type: none;
+  margin: 8rem 3rem;
+  padding: 0;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-weight: bold;
+  font-size: 120%;
+  li {
+    margin-bottom: 2rem;
+    a {
+      color: base.$bodyColor;
+      text-decoration: none;
+    }
+  }
 }
