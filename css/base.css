@@ -1,0 +1,83 @@
+/*
+@import
+*/
+@import url(sanitize.css);
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap&family=Zen+Maru+Gothic&display=swap");
+/*
+Common
+*/
+body {
+  background-color: #00a5be;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+}
+
+button {
+  width: auto;
+  margin: auto;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+header {
+  background-color: #fff;
+  padding: 1rem;
+  border-bottom: 3px solid #EEE;
+  box-shadow: rgba(122, 122, 122, 0.06) 0px 0px 6px 3px;
+}
+header .menuBtn {
+  float: left;
+}
+header .lineChar {
+  width: 2.5rem;
+  height: 0.2rem;
+  background-color: #4169e1;
+  border-radius: 1rem;
+  position: relative;
+}
+header .lineChar::before {
+  content: "";
+  width: 2.5rem;
+  height: 0.25rem;
+  background-color: #4169e1;
+  border-radius: 1rem;
+  position: absolute;
+  top: -0.8rem;
+}
+header .lineChar::after {
+  content: "Menu";
+  color: #4169e1;
+  font-size: 90%;
+  position: absolute;
+  width: 2.5rem;
+  text-align: center;
+  bottom: -1.5rem;
+  font-family: "Nunito", sans-serif;
+}
+header .logo-img {
+  width: 15%;
+  margin-right: auto;
+  margin-left: calc(50% - 2.5rem);
+  transform: translateX(-50%);
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+footer p {
+  margin: 0;
+}

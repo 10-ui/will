@@ -1,0 +1,169 @@
+/*
+@import
+*/
+@import url(sanitize.css);
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap&family=Zen+Maru+Gothic&display=swap");
+/*
+Common
+*/
+body {
+  background-color: #00a5be;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+}
+
+button {
+  width: auto;
+  margin: auto;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+header {
+  background-color: #fff;
+  padding: 1rem;
+  border-bottom: 3px solid #EEE;
+  box-shadow: rgba(122, 122, 122, 0.06) 0px 0px 6px 3px;
+}
+header .menuBtn {
+  float: left;
+}
+header .lineChar {
+  width: 2.5rem;
+  height: 0.2rem;
+  background-color: #4169e1;
+  border-radius: 1rem;
+  position: relative;
+}
+header .lineChar::before {
+  content: "";
+  width: 2.5rem;
+  height: 0.25rem;
+  background-color: #4169e1;
+  border-radius: 1rem;
+  position: absolute;
+  top: -0.8rem;
+}
+header .lineChar::after {
+  content: "Menu";
+  color: #4169e1;
+  font-size: 90%;
+  position: absolute;
+  width: 2.5rem;
+  text-align: center;
+  bottom: -1.5rem;
+  font-family: "Nunito", sans-serif;
+}
+header .logo-img {
+  width: 15%;
+  margin-right: auto;
+  margin-left: calc(50% - 2.5rem);
+  transform: translateX(-50%);
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+footer p {
+  margin: 0;
+}
+
+/*
+FirstView
+*/
+.firstView {
+  position: relative;
+}
+.firstView #particles-js {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.firstView .visualWrap {
+  position: relative;
+}
+.firstView .visualContainer {
+  width: 100%;
+  overflow: hidden;
+}
+.firstView .mainVisual {
+  height: 100vh;
+  width: auto;
+}
+.firstView .pageTitle {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 1rem 0 1rem;
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+.firstView .nextIcon {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+  color: #fff;
+}
+.firstView .scrollChar {
+  position: absolute;
+  bottom: 28%;
+  left: 70%;
+  transform: translateX(-50%);
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+main .lead-p {
+  background-color: #4169e1;
+  margin: 0;
+  padding: 1rem 0;
+  color: #fff;
+}
+main section {
+  width: 80%;
+  margin: auto;
+}
+main section h3 {
+  background-color: #4169e1;
+  border-radius: 0.7rem 0.7rem 0 0;
+  padding: 0.6rem 3rem;
+  margin: 0;
+  color: #fff;
+}
+main section .text-p {
+  margin: 0 0 0.8rem;
+  padding: 1rem;
+  color: #222;
+  background-color: #fff;
+  border-radius: 0 0 0.7rem 0.7rem;
+}
+main section button {
+  margin-bottom: 2rem;
+  width: 100%;
+  border-radius: 0.7rem;
+  padding: 0.5rem 1rem;
+  background-color: #fa527d;
+  color: #fff;
+  font-weight: 700;
+}

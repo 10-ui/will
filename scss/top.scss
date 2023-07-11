@@ -1,0 +1,89 @@
+// @import url(../css/base.css);
+@use "base";
+/*
+FirstView
+*/
+.firstView {
+  position: relative;
+  #particles-js {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  .visualWrap {
+    position: relative;
+  }
+  .visualContainer {
+    width: 100%;
+    overflow: hidden;
+  }
+  .mainVisual {
+    height: 100vh;
+    width: auto;
+    // overflow: hidden;
+  }
+  .pageTitle {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    background-color: rgba($color: #fff, $alpha: .7);
+    border-radius: 1rem 0 1rem;
+    font-family: 'Zen Maru Gothic', sans-serif;
+  }
+  .nextIcon {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    color: #fff;
+  }
+  .scrollChar {
+    position: absolute;
+    bottom: 28%;
+    left: 70%;
+    transform: translateX(-50%);
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+}
+main {
+  .lead-p {
+    background-color: base.$mainColor;
+    margin: 0;
+    padding: 1rem 0;
+    color: #fff;
+  }
+  section {
+    width: 80%;
+    margin: auto;
+    h3 {
+      background-color: base.$mainColor;
+      border-radius: .7rem .7rem 0 0;
+      padding: .6rem 3rem;
+      margin: 0;
+      color: #fff;
+    }
+    .text-p {
+      margin: 0 0 .8rem;
+      padding: 1rem;
+      color: #222;
+      background-color: #fff;
+      border-radius: 0 0 .7rem .7rem;
+    }
+    button {
+      margin-bottom: 2rem;
+      width: 100%;
+      border-radius: .7rem;
+      padding: .5rem 1rem;
+      background-color: base.$accentColor;
+      color: #fff;
+      font-weight: 700;
+    }
+  }
+}
