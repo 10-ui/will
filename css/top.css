@@ -158,6 +158,9 @@ main section .text-p {
   background-color: #fff;
   border-radius: 0 0 0.7rem 0.7rem;
 }
+main section .btn-p {
+  margin: 0;
+}
 main section button {
   margin-bottom: 2rem;
   width: 100%;
