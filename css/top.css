@@ -112,6 +112,29 @@ header .logo-img {
   transform: translateX(-50%);
 }
 
+.menu-list {
+  text-align: center;
+  list-style-type: none;
+  margin: 8rem 3rem 5rem;
+  padding: 0;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: bold;
+  font-size: 120%;
+}
+.menu-list li {
+  margin-bottom: 2rem;
+}
+.menu-list li a {
+  color: #00a5be;
+  text-decoration: none;
+}
+
+.swiper {
+  width: 100%;
+  max-height: 260px;
+  overflow: hidden;
+}
+
 footer {
   background-color: rgba(255, 255, 255, 0.4);
 }
@@ -212,27 +235,4 @@ main section .goBtn {
   font-weight: 700;
   border: none;
   text-decoration: none;
-}
-
-.menu-list {
-  text-align: center;
-  list-style-type: none;
-  margin: 8rem 3rem 5rem;
-  padding: 0;
-  font-family: "Zen Maru Gothic", sans-serif;
-  font-weight: bold;
-  font-size: 120%;
-}
-.menu-list li {
-  margin-bottom: 2rem;
-}
-.menu-list li a {
-  color: #00a5be;
-  text-decoration: none;
-}
-
-.swiper {
-  width: 100%;
-  max-height: 260px;
-  overflow: hidden;
 }

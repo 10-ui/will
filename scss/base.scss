@@ -124,6 +124,29 @@ header {
   }
 }
 
+.menu-list {
+  text-align: center;
+  list-style-type: none;
+  margin: 8rem 3rem 5rem;
+  padding: 0;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-weight: bold;
+  font-size: 120%;
+  li {
+    margin-bottom: 2rem;
+    a {
+      color: $bodyColor;
+      text-decoration: none;
+    }
+  }
+}
+
+.swiper {
+  width: 100%;
+  max-height: 260px;
+  overflow: hidden;
+}
+
 footer {
   background-color: rgba(255, 255, 255, .4);
   p {

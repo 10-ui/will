@@ -3,17 +3,17 @@
 particlesJS("particles-js",{
   "particles":{
     "number":{
-      "value":125,//この数値を変更すると紙吹雪の数が増減できる
+      "value":135,//この数値を変更すると紙吹雪の数が増減できる
       "density":{
         "enable":false,
         "value_area":400
       }
     },
     "color": {
-        "value": ["#EA5532", "#F6AD3C", "#FFF33F", "#00A95F", "#00ADA9", "#00AFEC","#4D4398", "#E85298"]//紙吹雪の色の数を増やすことが出来る
+        "value": ["#EA5532", "#F6AD3C", "#FFF33F", "#00A95F", "#00ADA9", "#00AFEC","#4D4398", "#E85298"]//紙吹雪の色
     },
     "shape":{
-      "type":"polygon",//形状はpolygonを指定
+      "type":"polygon",//多角形
       "stroke":{
         "width":0,
       },
