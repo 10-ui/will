@@ -2,11 +2,14 @@
 
 
 const hbgBtn = document.querySelector('.menuBtn');
-const lines = document.querySelector('.lineChar');
-const activeMenu = document.querySelector('.menu-list')
-
+const lines = document.querySelector('.menuBtn div');
+const body = document.querySelector('.menu-body');
 
 hbgBtn.addEventListener('click',()=>{
-  lines.classList.toggle('active-hbg-line');
-  activeMenu.classList.toggle('menu-list-active');
+  lines.classList.toggle('active');
+  body.classList.toggle('menu-body-ac')
+  if(lines.innerHTML === 'Menu'){
+    lines.innerHTML = 'Close'
+  }
+  else lines.innerHTML = 'Menu';
 });

@@ -38,38 +38,48 @@ img {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
   background-color: #fff;
   padding: 1rem;
   border-bottom:3px solid #EEE;
   box-shadow:rgba(122, 122, 122, 0.06) 0px 0px 6px 3px;
-  .menuBtn {
-    float: left;
-  }
+  // .menuBtn {
+  //   z-index: 999;
+  // }
   .lineChar {
     &::before {
       content: "";
       width: 2.5rem;
-      height: .25rem;
+      height: .2rem;
       background-color: $mainColor;
       border-radius: 1rem;
+      bottom: 1.5rem;
+      left: 0;
       position: absolute;
-      top: -.8rem;
+      transition: all ease .3s;
     }
     color: $mainColor;
     font-size: 90%;
     position: relative;
     width: 2.5rem;
     text-align: center;
-    bottom: -1.5rem;
+    bottom: -.6rem;
     font-family: 'Nunito', sans-serif;
+    transition: all ease 1s;
     &::after {
       content: "";
       width: 2.5rem;
       height: .2rem;
       background-color: $mainColor;
       border-radius: 1rem;
+      bottom: 2.2rem;
+      left: 0;
       position: absolute;
-
+      transition: all ease .3s;
     }
   }
   .logo-img {
@@ -78,6 +88,7 @@ header {
     margin-right: auto;
     margin-left: calc((50% - 2.5rem));
     transform: translateX(-50%);
+    // z-index: 999;
   }
 }
 
