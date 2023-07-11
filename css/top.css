@@ -160,6 +160,7 @@ main section .text-p {
 }
 main section .btn-p {
   margin: 0;
+  padding-top: 0.15rem;
 }
 main section button {
   margin-bottom: 2rem;
