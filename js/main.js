@@ -18,6 +18,6 @@ const swiper = new Swiper('.swiper',{
   loop: true,
   speed: 3000,
   autoplay: { // 自動再生
-    delay: 1500, // 1.5秒後に次のスライド
+    delay: 0, // 1.5秒後に次のスライド
   },
 });

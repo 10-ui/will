@@ -60,7 +60,7 @@ img {
   position: fixed;
   background-color: #fff;
   z-index: 998;
-  transition: all ease .4s;
+  transition: all ease .5s;
 }
 
 .menu-body-ac {
@@ -92,7 +92,7 @@ header {
       bottom: 1.5rem;
       left: .25rem;
       position: absolute;
-      transition: all ease .3s;
+      transition: all ease .2s;
     }
     color: $mainColor;
     font-size: 90%;
@@ -101,7 +101,7 @@ header {
     text-align: center;
     bottom: -.8rem;
     font-family: 'Nunito', sans-serif;
-    transition: all ease 1s;
+    transition: all ease .2s;
     &::after {
       content: "";
       width: 2rem;
@@ -111,7 +111,7 @@ header {
       bottom: 2.2rem;
       left: .25rem;
       position: absolute;
-      transition: all ease .3s;
+      transition: all ease .2s;
     }
   }
   .logo-img {
