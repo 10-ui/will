@@ -55,20 +55,21 @@ header {
       position: absolute;
       top: -.8rem;
     }
-    width: 2.5rem;
-    height: .2rem;
-    background-color: $mainColor;
-    border-radius: 1rem;
+    color: $mainColor;
+    font-size: 90%;
     position: relative;
+    width: 2.5rem;
+    text-align: center;
+    bottom: -1.5rem;
+    font-family: 'Nunito', sans-serif;
     &::after {
-      content: "Menu";
-      color: $mainColor;
-      font-size: 90%;
-      position: absolute;
+      content: "";
       width: 2.5rem;
-      text-align: center;
-      bottom: -1.5rem;
-      font-family: 'Nunito', sans-serif;
+      height: .2rem;
+      background-color: $mainColor;
+      border-radius: 1rem;
+      position: absolute;
+
     }
   }
   .logo-img {
