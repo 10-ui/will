@@ -56,16 +56,56 @@ img {
   visibility: hidden;
   width: 100vw;
   height: 100vh;
-  top: -110vh;
+  top: -150vh;
   position: fixed;
-  background-color: #fff;
   z-index: 998;
-  transition: all ease .5s;
+  transition: all ease 1s;
+  background-color: $bodyColor;
 }
 
 .menu-body-ac {
+  position: fixed;
   visibility: visible;
   top: 0;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+
+.menu-list {
+  text-align: center;
+  list-style-type: none;
+  margin: 5.1rem 0 1rem;
+  padding: 0;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-weight: bold;
+  font-size: 120%;
+  li {
+    border-top: #fff 1px solid;
+    padding: 1.7rem 0;
+    &:last-child {
+    border-bottom: #fff 1px solid;
+    }
+    a {
+      // color: $bodyColor;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
+.swiper {
+  width: 100%;
+  max-height: 260px;
+  overflow: hidden;
+  margin: 1.5rem 0 0;
+  z-index: 999;
+
+  .swiper-wrapper {
+    transition-timing-function:linear !important;
+    gap: 1rem;
+  }
+  // transform: rotate(-30deg);
 }
 
 
@@ -80,6 +120,7 @@ header {
   border-bottom:3px solid #EEE;
   box-shadow:rgba(122, 122, 122, 0.06) 0px 0px 6px 3px;
   // .menuBtn {
+  //   // position: fixed;
   //   z-index: 999;
   // }
   .lineChar {
@@ -122,29 +163,6 @@ header {
     transform: translateX(-50%);
     // z-index: 999;
   }
-}
-
-.menu-list {
-  text-align: center;
-  list-style-type: none;
-  margin: 8rem 3rem 5rem;
-  padding: 0;
-  font-family: 'Zen Maru Gothic', sans-serif;
-  font-weight: bold;
-  font-size: 120%;
-  li {
-    margin-bottom: 2rem;
-    a {
-      color: $bodyColor;
-      text-decoration: none;
-    }
-  }
-}
-
-.swiper {
-  width: 100%;
-  max-height: 260px;
-  overflow: hidden;
 }
 
 footer {
