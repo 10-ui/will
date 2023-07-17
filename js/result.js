@@ -25,5 +25,5 @@ switch (result){
     com.innerHTML = '完璧です！<br>君ならWebデザイン科を<br>生き抜けるはず！';
     break;
   default:
-    confirm.innerHTML = 'エラー'
+    com.innerHTML = 'エラー'
 }
