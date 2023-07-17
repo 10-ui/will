@@ -1,5 +1,28 @@
 @use 'base';
 
+p {
+  display: inline-block;
+}
+
 .result {
-    margin-top: 13rem;
+  color: #fff;
+  margin-top: 13rem;
+  .resultContainer {
+    display: block;
+    text-align: center;
+  }
+  .collectNum {
+    color: base.$accentColor;
+    font-size: 3rem;
+  }
+  .num {
+    font-size: 2rem;
+  }
+  .shareSNS {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .share {
+    font-size: 1rem;
+  }
 }

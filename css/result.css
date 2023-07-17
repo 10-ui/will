@@ -156,6 +156,29 @@ footer p {
   margin: 0;
 }
 
+p {
+  display: inline-block;
+}
+
 .result {
+  color: #fff;
   margin-top: 13rem;
+}
+.result .resultContainer {
+  display: block;
+  text-align: center;
+}
+.result .collectNum {
+  color: #fa527d;
+  font-size: 3rem;
+}
+.result .num {
+  font-size: 2rem;
+}
+.result .shareSNS {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.result .share {
+  font-size: 1rem;
 }
