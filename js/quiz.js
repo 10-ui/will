@@ -145,6 +145,12 @@ function fourToFive() {
   count += 1;
 }
 
+function toResult() {
+  document.cookie = `data=${collect}; path=/quiz/`;
+  location.href = '../quiz/result/index.html'
+}
+
+
 ////選択肢1-4までの処理
 //リセット
 function reset() {
@@ -166,9 +172,12 @@ op1st.addEventListener('click',()=>{
   else if(count === 3){
     threeToFour();
   }
+  else if(count === 4){
+    fourToFive();
+  }
   else {
     collect += 1;
-    fourToFive();
+    toResult();
   }
 });
 
@@ -182,10 +191,14 @@ op2nd.addEventListener('click',()=>{
     twoToThree();
   }
   else if(count === 3){
+    collect +=1;
     threeToFour();
   }
-  else {
+  else if(count === 4){
     fourToFive();
+  }
+  else {
+    toResult();
   }
 });
 
@@ -202,8 +215,11 @@ op3rd.addEventListener('click',()=>{
   else if(count === 3){
     threeToFour();
   }
-  else {
+  else if(count === 4){
     fourToFive();
+  }
+  else {
+    toResult();
   }
 });
 
@@ -220,8 +236,12 @@ op4th.addEventListener('click',()=>{
     collect +=1;
     threeToFour();
   }
-  else {
+  else if(count === 4){
+    collect += 1;
     fourToFive();
+  }
+  else {
+    toResult();
   }
 });
 //-----------------------------------ここまで-----------------------------------//
