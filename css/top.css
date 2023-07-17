@@ -3,7 +3,7 @@
 @import
 */
 @import url(sanitize.css);
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap&family=Zen+Maru+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Zen+Kaku+Gothic+New&family=Zen+Maru+Gothic&display=swap");
 /*
 Common
 */
@@ -15,6 +15,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 h1,
@@ -55,7 +56,7 @@ img {
   position: fixed;
   z-index: 998;
   transition: all ease 1s;
-  background-color: #00a5be;
+  background-color: #4169e1;
 }
 
 .menu-body-ac {

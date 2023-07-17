@@ -1,1 +1,120 @@
-@use 'base'
+@use 'base';
+
+@media screen and (max-width: 389px) {
+  .noiphone {
+    display: block !important;
+  }
+}
+.quizArea {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  .quiz-picture {
+    width: 95%;
+    border-radius: 1rem;
+    border: 4px solid base.$mainColor;
+    box-sizing: border-box;
+    margin: 2rem auto 0;
+  }
+  .quiz-num {
+    margin: 1.2rem auto 0;
+    text-align: left;
+    width: 85%;
+  }
+  .quiz-sentence {
+    margin: 0 auto .5rem;
+    width: 85%;
+    text-align: left;
+  }
+  .button-area {
+    .buttons {
+      flex-basis: 50%;
+      display: block;
+      text-align: center;
+      padding: 1rem 1rem 0;
+      button {
+        padding: .7rem;
+        width: 100%;
+        border-radius: .4rem;
+        border: none;
+        font-size: 1.1rem;
+        background-color: base.$accentColor;
+        color: #fff;
+      }
+      .noiphone {
+        display: none;
+      }
+    }
+  }
+  .quiz-hint {
+    margin-top: 1.7rem;
+    .out-modal {
+      position: fixed;
+      display: block;
+      top: 50%;
+      left: 50%;
+      width: 80vw;
+      height: 30vh;
+      transform: translateX(-50%) translateY(-50%);
+      background-color: rgba($color: #fff, $alpha: 0);
+      visibility: hidden;
+      opacity: 0;
+    }
+    .out-modal-active {
+      visibility: visible !important;
+      opacity: 1 !important;
+      background-color: rgba($color: #fff, $alpha: 1) !important;
+      z-index: 996 !important;
+    }
+    .attention {
+      margin-top: 2rem;
+    }
+    .select {
+      display: block;
+      width: 80%;
+      padding: .5rem;
+      margin: 1.5rem auto;
+      text-align: center;
+      color: #fff;
+      border-radius: .7rem;
+      &.yes {
+        background-color: base.$mainColor;
+      }
+      &.no {
+        background-color: base.$accentColor;
+      }
+    }
+    .tap-hide-active {
+      visibility: visible !important;
+      opacity: 1 !important;
+      background-color: rgba($color: #000000, $alpha: .5) !important;
+      z-index: 995 !important;
+    }
+    .tap-hide-area {
+      position: fixed;
+      inset: 0;
+      background-color: rgba($color: #000000, $alpha: 0);
+      visibility: hidden;
+      opacity: 0;
+    }
+    .hint {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      background-color: #fff;
+      margin: 0;
+      padding: 0;
+      appearance: none;
+      border: none;
+      font-size: 2.1rem;
+      color: #222;
+      margin: .5rem .6rem;
+      &:first-child {
+        padding-left: .2rem;
+      }
+      &:last-child {
+        background-color: #f23f42;
+        color: #fff;
+        padding-left: .3rem;
+      }
+    }
+  }
+}

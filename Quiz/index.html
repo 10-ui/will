@@ -11,55 +11,44 @@
   <!-- script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
-  <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/5-8/js/5-8.js" defer></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer></script>
-  <script src="../js/main.js" defer></script>
+  <script src="../js/quiz.js" defer></script>
   <!-- title -->
   <title>おさらいクイズ | Will | 日本電子専門学校Webデザイン科</title>
 </head>
 <body>
-  <div class="menu-body">
-    <ul class="menu-list">
-      <li>
-        <a href="#" target="_blank" rel="noopener noreferrer">おさらいクイズ</a>
-      </li>
-      <li>
-        <a href="#" target="_blank" rel="noopener noreferrer">Webデザイン科の一週間</a>
-      </li>
-      <li>
-        <a href="https://www.jec.ac.jp/" target="_blank" rel="noopener noreferrer">日本電子専門学校公式Webサイト</a>
-      </li>
-      <li>
-        <a href="https://www.jec.ac.jp/course/mobile/aw/" target="_blank" rel="noopener noreferrer">Webデザイン科</a>
-      </li>
-      <li>
-        <a href="https://aw-hotpage.jec.ac.jp/" target="_blank" rel="noopener noreferrer">Webデザイン科Hotpage</a>
-      </li>
-      <li>
-        <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=wnw8985b" target="_blank" rel="noopener noreferrer">LINEで友だちになる</a>
-      </li>
-    </ul>
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="../img/slidePic/welcome.JPG" alt="ようこそWebデザイン科へ"></div>
-        <div class="swiper-slide"><img src="../img/slidePic/allContents.JPG" alt="コンテンツ東京の集合写真"></div>
-        <div class="swiper-slide"><img src="../img/slidePic/casino.JPG" alt="カジノ"></div>
-        <div class="swiper-slide"><img src="../img/slidePic/halloween.JPG" alt="ハロウィンカードを作ろう！"></div>
-        <div class="swiper-slide"><img src="../img/slidePic/search.JPG" alt="学生を探せ！"></div>
-      </div>
-    </div>
-  </div>
-    <header class="flex">
-      <div class="menuBtn">
-        <div class="lineChar" id="menu">Menu</div>
-      </div>
-      <div class="logo-img">
-        <a href="../index.html"><img src="../img/AW.svg" alt="Web科のロゴ"></a>
-      </div>
-    </header>
     <main>
-
+      <div class="attentionArea"></div>
+      <div class="startArea"></div><!--はじめると戻る-->
+      <div class="quizArea">
+        <!-- <h1 class="quiz-title">おさらいクイズ！</h1> -->
+        <img class="quiz-picture" src="../img/slidePic/advice.JPG" alt="教室の写真">
+        <section id="quiz-area">
+          <h2 class="quiz-num">Q1/Q5.</h2>
+          <h3 class="quiz-sentence">Webデザイン科で遅刻をすると<br>どのような扱いになるか？</h3>
+          <div class="button-area flex">
+            <span class="buttons"><button class="option" id="btn1">遅刻</button></span>
+            <span class="buttons"><button class="option" id="btn2">５分以内<br class="noiphone">なら出席</button></span>
+            <span class="buttons"><button class="option" id="btn3">欠席</button></span>
+            <span class="buttons"><button class="option" id="btn4">５分以内<br class="noiphone">なら遅刻</button></span>
+          </div>
+          <div class="quiz-hint flex">
+            <div class="out-modal">
+              <p class="attention">ここで本当に退出しますか？<br>ここまでの回答は保存されません。</p>
+              <div class="select yes">トップページへ戻る</div>
+              <div class="select no">問題へ戻る</div>
+            </div>
+            <div class="tap-hide-area"></div>
+            <div class="hints flex">
+                <input type="button" value="undo" class="hint material-symbols-rounded" id="quiz-pre">
+                <input type="button" value="person" class="hint material-symbols-rounded" id="hint-teacher">
+                <input type="button" value="door_sliding" class="hint material-symbols-rounded"  id="hint-tv">
+                <input type="button" value="support_agent" class="hint material-symbols-rounded" id="hint-senior">
+                <input type="button" value="logout" class="hint material-symbols-rounded" id="quiz-out">
+            </div>
+          </div>
+        </section>
+      <!--<div class="quiz-area">--></div>
     </main>
 </body>
 </html>
