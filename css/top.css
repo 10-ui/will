@@ -70,7 +70,7 @@ img {
 .menu-list {
   text-align: center;
   list-style-type: none;
-  margin: 4.9rem 0 1rem;
+  margin: 5.1rem 0 1rem;
   padding: 0;
   font-family: "Zen Maru Gothic", sans-serif;
   font-weight: bold;
@@ -90,7 +90,6 @@ img {
 
 .swiper {
   width: 100%;
-  margin-bottom: 1.5rem !important;
   max-height: 260px;
   overflow: hidden;
   margin: 1.5rem 0 0;
