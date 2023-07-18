@@ -166,6 +166,8 @@ footer p {
 }
 .quizArea .quiz-picture {
   width: 95%;
+  min-height: 280px;
+  max-height: 280px;
   border-radius: 1rem;
   border: 4px solid #4169e1;
   box-sizing: border-box;
@@ -180,6 +182,10 @@ footer p {
   margin: 0 auto 0.5rem;
   width: 85%;
   text-align: left;
+}
+.quizArea .button-area {
+  max-height: 135px;
+  min-height: 135px;
 }
 .quizArea .button-area .buttons {
   flex-basis: 50%;
@@ -273,4 +279,15 @@ footer p {
   background-color: #f23f42;
   color: #fff;
   padding-left: 0.3rem;
+}
+
+.teacher-pic {
+  display: none;
+  width: 30%;
+  height: auto;
+  margin: 1rem 0 0 1rem;
+}
+
+.teacher-ac {
+  display: block;
 }

@@ -9,6 +9,8 @@
   font-family: 'Zen Kaku Gothic New', sans-serif;
   .quiz-picture {
     width: 95%;
+    min-height: 280px;
+    max-height: 280px;
     border-radius: 1rem;
     border: 4px solid base.$mainColor;
     box-sizing: border-box;
@@ -25,6 +27,8 @@
     text-align: left;
   }
   .button-area {
+    max-height: 135px;
+    min-height: 135px;
     .buttons {
       flex-basis: 50%;
       display: block;
@@ -117,4 +121,14 @@
       }
     }
   }
+}
+.teacher-pic {
+  display: none;
+  width: 30%;
+  height: auto;
+  margin: 1rem 0 0 1rem;
+}
+
+.teacher-ac {
+  display: block;
 }
