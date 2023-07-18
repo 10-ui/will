@@ -182,3 +182,16 @@ p {
 .result .share {
   font-size: 1rem;
 }
+
+.sns {
+  display: block;
+  width: 45px;
+  height: 45px;
+  padding: 1rem;
+  background-image: url(../img/twitter.svg);
+  border-radius: 50%;
+  appearance: none;
+  border: none;
+
+  margin: 0 auto 1.5rem;
+}
