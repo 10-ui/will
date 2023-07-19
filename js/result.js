@@ -27,3 +27,9 @@ switch (result){
   default:
     com.innerHTML = 'エラー'
 }
+
+const sns = document.querySelector('.sns')
+let numtwi = num.innerHTML;
+
+sns.setAttribute("data-text",`私の結果は${numtwi}点でした！ | Webデザイン科おさらいクイズ \n  みんなもやってみて！↓\n`);
+

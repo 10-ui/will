@@ -219,6 +219,7 @@ footer p {
   background-color: rgba(255, 255, 255, 0);
   visibility: hidden;
   opacity: 0;
+  border-radius: 0.8rem;
 }
 .quizArea .quiz-hint .out-modal-active {
   visibility: visible !important;

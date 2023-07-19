@@ -6,7 +6,7 @@ p {
 
 .result {
   color: #fff;
-  margin-top: 13rem;
+  margin-top: 6rem;
   .resultContainer {
     display: block;
     text-align: center;
@@ -24,5 +24,23 @@ p {
   }
   .share {
     font-size: 1rem;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .twitter-share-button {
+    display: block;
+    margin: 1.5rem auto;
+  }
+
+  a {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    color: #fff;
+    margin: .7rem auto 2rem;
+    padding: .5rem 1rem;
+    background-color: base.$accentColor;
+    border-radius: 1rem;
+    font-size: 1.2rem;
   }
 }

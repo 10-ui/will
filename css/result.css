@@ -162,7 +162,7 @@ p {
 
 .result {
   color: #fff;
-  margin-top: 13rem;
+  margin-top: 6rem;
 }
 .result .resultContainer {
   display: block;
@@ -181,17 +181,22 @@ p {
 }
 .result .share {
   font-size: 1rem;
-}
-
-.sns {
   display: block;
-  width: 45px;
-  height: 45px;
-  padding: 1rem;
-  background-image: url(../img/twitter.svg);
-  border-radius: 50%;
-  appearance: none;
-  border: none;
-
-  margin: 0 auto 1.5rem;
+  margin-bottom: 1rem;
+}
+.result .twitter-share-button {
+  display: block;
+  margin: 1.5rem auto;
+}
+.result a {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-decoration: none;
+  color: #fff;
+  margin: 0.7rem auto 2rem;
+  padding: 0.5rem 1rem;
+  background-color: #fa527d;
+  border-radius: 1rem;
+  font-size: 1.2rem;
 }
