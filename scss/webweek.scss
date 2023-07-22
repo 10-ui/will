@@ -1,0 +1,54 @@
+@use 'base';
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500&display=swap');
+
+h1 {
+  margin: 10rem 0 0;
+}
+
+.current {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  top: 80%;
+  left: 6%;
+  background-color: snow;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  &::before {
+    content: "";
+    position: absolute;
+    top: .9rem;
+    width: .5rem;
+    height: .5rem;
+    border-top: #222 2px solid;
+    border-right: #222 2px solid;
+    border-radius: .1rem;
+    background-color: transparent;
+    transform: rotate(-45deg);
+  }
+}
+
+.menu-open {
+  width: 5.5rem;
+  height: 20rem;
+  border-radius: 10rem;
+  background-color: snow;
+}
+
+.margin {
+  width: 100px;
+  height: 100px;
+  margin-top: 500rem;
+}
+
+.weekList {
+  padding: 0;
+  text-align: center;
+  list-style-type: none;
+}

@@ -1,0 +1,209 @@
+/*
+@import
+*/
+@import url(sanitize.css);
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Zen+Kaku+Gothic+New&family=Zen+Maru+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500&display=swap");
+/*
+Common
+*/
+body {
+  background-color: #00a5be;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+}
+
+a {
+  width: auto;
+  margin: auto;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.active::before {
+  width: 2rem !important;
+  left: 0.3rem !important;
+  bottom: 1.8rem !important;
+  transform: rotate(-45deg);
+}
+.active::after {
+  width: 2rem !important;
+  left: 0.3rem !important;
+  bottom: 1.8rem !important;
+  transform: rotate(45deg);
+}
+
+.menu-body {
+  visibility: hidden;
+  width: 100vw;
+  height: 100vh;
+  top: -150vh;
+  position: fixed;
+  z-index: 998;
+  transition: all ease 1s;
+  background-color: #4169e1;
+}
+
+.menu-body-ac {
+  position: fixed;
+  visibility: visible;
+  top: 0;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.menu-list {
+  text-align: center;
+  list-style-type: none;
+  margin: 5.1rem 0 1rem;
+  padding: 0;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: bold;
+  font-size: 120%;
+}
+.menu-list li {
+  border-top: #fff 1px solid;
+  padding: 1.7rem 0;
+}
+.menu-list li:last-child {
+  border-bottom: #fff 1px solid;
+}
+.menu-list li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.swiper {
+  width: 100%;
+  max-height: 260px;
+  overflow: hidden;
+  margin: 1.5rem 0;
+  z-index: 999;
+}
+.swiper .swiper-wrapper {
+  transition-timing-function: linear !important;
+  gap: 1rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #fff;
+  padding: 1rem;
+  border-bottom: 3px solid #EEE;
+  box-shadow: rgba(122, 122, 122, 0.06) 0px 0px 6px 3px;
+}
+header .lineChar {
+  color: #4169e1;
+  font-size: 90%;
+  position: relative;
+  width: 2.5rem;
+  text-align: center;
+  bottom: -0.8rem;
+  font-family: "Nunito", sans-serif;
+  transition: all ease 0.2s;
+}
+header .lineChar::before {
+  content: "";
+  width: 2rem;
+  height: 0.2rem;
+  background-color: #4169e1;
+  border-radius: 1rem;
+  bottom: 1.5rem;
+  left: 0.25rem;
+  position: absolute;
+  transition: all ease 0.2s;
+}
+header .lineChar::after {
+  content: "";
+  width: 2rem;
+  height: 0.2rem;
+  background-color: #4169e1;
+  border-radius: 1rem;
+  bottom: 2.2rem;
+  left: 0.25rem;
+  position: absolute;
+  transition: all ease 0.2s;
+}
+header .logo-img {
+  width: 15%;
+  margin-right: auto;
+  margin-left: calc(50% - 2.5rem);
+  transform: translateX(-50%);
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+footer p {
+  margin: 0;
+}
+
+h1 {
+  margin: 10rem 0 0;
+}
+
+.current {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  top: 80%;
+  left: 6%;
+  background-color: snow;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+.current::before {
+  content: "";
+  position: absolute;
+  top: 0.9rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-top: #222 2px solid;
+  border-right: #222 2px solid;
+  border-radius: 0.1rem;
+  background-color: transparent;
+  transform: rotate(-45deg);
+}
+
+.menu-open {
+  width: 5.5rem;
+  height: 20rem;
+  border-radius: 10rem;
+  background-color: snow;
+}
+
+.margin {
+  width: 100px;
+  height: 100px;
+  margin-top: 500rem;
+}
+
+.weekList {
+  padding: 0;
+  text-align: center;
+  list-style-type: none;
+}
