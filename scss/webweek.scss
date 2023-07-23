@@ -2,8 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500&display=swap');
 
-h1 {
-  margin: 10rem 0 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .menu {
@@ -21,6 +27,7 @@ h1 {
   font-weight: 500;
   font-size: 1.3rem;
   transition: all 1s ease;
+  z-index: 998;
   &::before {
     content: "";
     position: absolute;
@@ -32,7 +39,7 @@ h1 {
     border-radius: .1rem;
     background-color: transparent;
     transform: rotate(-45deg);
-    z-index: 5;
+    z-index: 999;
   }
 }
 
@@ -49,18 +56,18 @@ h1 {
   }
 }
 
-.margin {
-  width: 100px;
-  height: 100px;
-  margin-top: 500rem;
-}
+// .margin {
+//   width: 100px;
+//   height: 100px;
+//   margin-top: 500rem;
+// }
 
 .weekList {
   padding: 0;
   text-align: center;
   list-style-type: none;
   width: 100%;
-  margin-top: 1.7rem;
+  margin: 1.7rem 0 0;
   li {
     padding: .7rem 0;
     width: 100%;
@@ -71,5 +78,87 @@ h1 {
       text-decoration: none;
       color: #222;
     }
+  }
+}
+
+.circle {
+  width: 8rem;
+  height: 8rem;
+  background-color: #fff;
+  color: base.$mainColor;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.day {
+  width: 100vw;
+  height: 100vh;
+  border: #222 2px solid;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  padding-left: 1.5rem;
+  position: relative;
+  .class {
+    position: absolute;
+    top: 20%;
+    right: 15%;
+  }
+  .afsc {
+    position: absolute;
+    top: 60%;
+    left: 15%;
+  }
+  h2 {
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: left;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    &::after {
+      content: "";
+      width: 53%;
+      height: 0.5rem;
+      background-color: base.$accentColor;
+      box-shadow:0 0 50px #f06292;
+      position: absolute;
+      bottom: .4rem;
+      left: 0;
+      z-index: -1;
+    }
+  }
+  &:nth-child(even) {
+    background-color: base.$mainColor;
+  }
+}
+
+.week h2::after {
+  width: 96%;
+}
+
+.tue h2::after {
+  width: 54.5%;
+}
+
+.wed h2::after {
+  width: 61.5%;
+}
+
+.thu h2::after {
+  width: 56%;
+}
+
+.fri h2::after {
+  width: 49%;
+}
+
+.mon,
+.wed,
+.fri {
+  .circle {
+    color: base.$bodyColor;
   }
 }
