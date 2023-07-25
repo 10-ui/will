@@ -167,7 +167,8 @@ html {
   scroll-behavior: smooth;
 }
 
-.menu {
+.menu,
+.close {
   position: fixed;
   display: flex;
   align-items: center;
@@ -184,7 +185,8 @@ html {
   transition: all 1s ease;
   z-index: 998;
 }
-.menu::before {
+.menu::before,
+.close::before {
   content: "";
   position: absolute;
   top: 0.9rem;
@@ -246,7 +248,6 @@ html {
 .day {
   width: 100vw;
   height: 100vh;
-  border: #222 2px solid;
   font-family: "Zen Maru Gothic", sans-serif;
   padding-left: 1.5rem;
   position: relative;
@@ -255,11 +256,13 @@ html {
   position: absolute;
   top: 20%;
   right: 15%;
+  transition: all ease 1s;
 }
 .day .afsc {
   position: absolute;
   top: 60%;
-  left: 15%;
+  right: 53%;
+  transition: all ease 1s;
 }
 .day h2 {
   font-weight: 500;
@@ -308,4 +311,24 @@ html {
 .wed .circle,
 .fri .circle {
   color: #00a5be;
+}
+
+.introc,
+.introa {
+  display: none;
+  margin-top: 10rem;
+}
+.introc h2::after,
+.introa h2::after {
+  width: 46%;
+}
+.introc p,
+.introa p {
+  margin-top: 2rem;
+  width: 90%;
+  font-size: 1.3rem;
+}
+
+.introa h2::after {
+  width: 36%;
 }

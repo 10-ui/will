@@ -12,7 +12,8 @@ html {
   scroll-behavior: smooth;
 }
 
-.menu {
+.menu,
+.close {
   position: fixed;
   display: flex;
   align-items: center;
@@ -97,7 +98,7 @@ html {
 .day {
   width: 100vw;
   height: 100vh;
-  border: #222 2px solid;
+  // border: #222 2px solid;
   font-family: 'Zen Maru Gothic', sans-serif;
   padding-left: 1.5rem;
   position: relative;
@@ -105,11 +106,13 @@ html {
     position: absolute;
     top: 20%;
     right: 15%;
+    transition: all ease 1s;
   }
   .afsc {
     position: absolute;
     top: 60%;
-    left: 15%;
+    right: 53%;
+    transition: all ease 1s;
   }
   h2 {
     font-weight: 500;
@@ -161,4 +164,23 @@ html {
   .circle {
     color: base.$bodyColor;
   }
+}
+
+.introc,
+.introa {
+  display: none;
+  margin-top: 10rem;
+  // transition: all ease 1s;
+  h2::after {
+    width: 46%;
+  }
+  p {
+    margin-top: 2rem;
+    width: 90%;
+    font-size: 1.3rem;
+  }
+}
+
+.introa h2::after {
+  width: 36%;
 }

@@ -1,15 +1,3 @@
-// モーダルを一個作って
-
-// 問題文、img、ボタンごとにidとかつけとく
-
-// jsで内容を逐一変えていく。
-
-// カウント数を判定して
-
-// 正解不正解と
-
-// 最後に数を出す
-
 const tapHide = document.querySelector('.tap-hide-area');
 const modal = document.querySelector('.out-modal');
 const picture = document.querySelector('.quiz-picture');
@@ -202,7 +190,7 @@ function fourToFive() {
 }
 
 function toResult() {
-  document.cookie = `data=${collect}; path=/quiz/`;
+  document.cookie = `data=${collect}; path=~/quiz/`;
   location.href = '../quiz/result/index.html'
 }
 
@@ -348,14 +336,6 @@ modalsTv.addEventListener('click',()=>{//ミリオネアボタンを押したと
   no.innerHTML = 'もう少し自分で考えてみる';//書き換え
   modalOn();
 });
-
-//先輩に聞くボタンの処理
-// modalsSenior.addEventListener('click',()=>{//先輩に聞くボタンを押したときの処理
-//   attention.innerHTML = '先輩にヒントをもらいますか？';//書き換え
-//   yes.innerHTML = 'もらってみる';//書き換え
-//   no.innerHTML = 'もう少し自分で考えてみる';//書き換え
-//   modalOn();
-// });
 
 //退出ボタンの処理
 modalsLogout.addEventListener('click',()=>{//退出ボタンを押したときの処理

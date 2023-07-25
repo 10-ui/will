@@ -181,6 +181,7 @@ footer p {
 .quizArea .quiz-sentence {
   margin: 0 auto 0.5rem;
   width: 85%;
+  min-height: 56px;
   text-align: left;
 }
 .quizArea .button-area {
