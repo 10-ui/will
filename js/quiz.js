@@ -190,7 +190,7 @@ function fourToFive() {
 }
 
 function toResult() {
-  document.cookie = `data=${collect}; path=~/quiz/`;
+  document.cookie = `data=${collect}; path=/quiz/`;
   location.href = '../quiz/result/index.html'
 }
 

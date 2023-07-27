@@ -246,11 +246,13 @@ html {
 }
 
 .day {
+  overflow-y: scroll;
   width: 100vw;
   height: 100vh;
   font-family: "Zen Maru Gothic", sans-serif;
   padding-left: 1.5rem;
   position: relative;
+  padding-bottom: 4rem;
 }
 .day .class {
   position: absolute;
@@ -265,6 +267,7 @@ html {
   transition: all ease 1s;
 }
 .day h2 {
+  margin-top: 2rem;
   font-weight: 500;
   font-size: 2rem;
   text-align: left;

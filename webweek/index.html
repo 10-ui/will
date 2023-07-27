@@ -28,45 +28,147 @@
     </div>
     <div class="container">
       <div class="inner">
-        <!-- <section class="day week">
-          <h2>Webデザイン科の一週間</h2>
-        </section> -->
         <section class="mon day" id="mon">
           <h2>月曜日<small><small>~Monday~</small></small></h2>
-          <div class="circle class">授業</div>
-          <div class="circle afsc">放課後</div>
+          <div class="circle class" onclick="clasOpen(0); location.href ='#mon'">授業</div>
+          <div class="circle afsc" onclick="afskOpen(0); location.href ='#mon'">放課後</div>
           <div class="introc">
-            <h2>HTML&CSS</h2>
-            <p>この教科はwebサイト制作において必須な記法であるHTMLとその見た目を変更するcssを学ぶ授業です。
-              自己紹介のサイト制作や前記課題（内容は毎年変化します）のサイトを作るためにも必要な技能を学べる授業になっています。</p>
+            <section>
+              <h2>HTML&CSS</h2>
+              <p>この教科はwebサイト制作において必須な記法であるHTMLとその見た目を変更するcssを学ぶ授業です。
+                自己紹介のサイト制作や前記課題（内容は毎年変化します）のサイトを作るためにも必要な技能を学べる授業になっています。</p>
+            </section>
           </div>
           <div class="introa">
-            <h2>自由実習</h2>
-            <p>
-              月曜日の放課後は授業や実習がないので、帰る人もいればご飯を食べて残る人もいます。<br>
-              課題提出前は残っている人も多く、みんなで課題に取り組むこともあります。
-            </p>
+            <section>
+              <h2>自由実習</h2>
+              <p>
+                月曜日の放課後は授業や実習がないので、帰る人もいればご飯を食べて残る人もいます。<br>
+                課題提出前は残っている人も多く、みんなで課題に取り組むこともあります。
+              </p>
+            </section>
           </div>
         </section>
         <section class="tue day" id="tue">
           <h2>火曜日<small><small>~Tuesday~</small></small></h2>
-          <div class="circle class">授業</div>
-          <div class="circle afsc">放課後</div>
+          <div class="circle class" onclick="clasOpen(1); location.href ='#tue'">授業</div>
+          <div class="circle afsc" onclick="afskOpen(1); location.href ='#tue'">放課後</div>
+          <div class="introc">
+            <section>
+              <h2>企画書＆<br>プレゼンテーション</h2>
+              <p>
+                Webデザイン科での学習の<br>肝といってもいい授業です。<br>
+                どの授業も大事ですがこの授業は<br>
+                自分が考えた企画をいかにして<br>クライアント様に聞いてもらい、<br>
+                伝えるかを学べる授業です。<br>
+                社会人として、仕事をする上で必須スキルを習うことができます。<br>
+              </p>
+            </section>
+            <section>
+              <h2>HTML&CSS</h2>
+              <p>この教科はwebサイト制作において必須な記法であるHTMLとその見た目を変更するcssを学ぶ授業です。
+                自己紹介のサイト制作や前記課題（内容は毎年変化します）のサイトを作るためにも必要な技能を学べる授業になっています。</p>
+            </section>
+          </div>
+          <div class="introa">
+            <h2>自由実習</h2>
+            <p>
+              火曜日の放課後は<br>夜も遅くなってしまうので<br>帰ってしまう人がほとんどです。<br>
+              課題の提出期限が迫っているときにはみんなで勉強もします。
+            </p>
+          </div>
         </section>
         <section class="wed day" id="wed">
           <h2>水曜日<small><small>~Wednesday~</small></small></h2>
-          <div class="circle class">授業</div>
-          <div class="circle afsc">放課後</div>
+          <div class="circle class" onclick="clasOpen(2)">授業</div>
+          <div class="circle afsc" onclick="afskOpen(2)">放課後</div>
+          <div class="introc">
+            <section>
+              <h2>就職リテラシー</h2>
+              <p>
+                キャリアコンサルタントの資格を<br>持った講師と一緒に自己分析や<br>履歴書の作成を行います。<br>
+                就職活動についての相談は<br>この時間に担当の先生と<br>行うことができる<br>とても有意義な授業です。
+              </p>
+            </section>
+            <section>
+              <h2>色彩演習/UI・UX</h2>
+              <p>
+                色彩演習では色彩検定™　３級の<br>取得を目指して勉強をします。<br>
+                UI・UXではデジタルでPhotoshopや<br>illustlatorなどを用いて<br>デザイナーとして必要な<br>一通りの技能を身につけることができます。
+              </p>
+            </section>
+          </div>
+          <div class="introa">
+            <h2>オープン実習</h2>
+            <p>
+              水曜日と金曜日は先生が19:30まで実習室におり、<br>
+              生徒の質問に答える時間を<br>作ってくれます。<br>
+              何かわからないことがあっても<br>ここで聞けば<br>
+              すっきりさっぱり解決です！
+            </p>
+          </div>
+        </section>
         </section>
         <section class="thu day" id="thu">
           <h2>木曜日<small><small>~Thursday~</small></small></h2>
-          <div class="circle class">授業</div>
-          <div class="circle afsc">放課後</div>
+          <div class="circle class" onclick="clasOpen(3)">授業</div>
+          <div class="circle afsc" onclick="afskOpen(3)">放課後</div>
+          <div class="introc">
+            <section>
+              <h2>イラストレーション</h2>
+              <p>
+                デジタルではなくアナログで<br>イラストを書くことによって<br>
+                絵を描く感覚を身につけます。<br>デジタルでは意図せず出しにくい<br>
+                僅かな色の塗りムラなどを感じ<br>それをどう考えていくかや、<br>
+                コンテストに応募するなど、<br>活動の幅は多岐にわたります。
+              </p>
+            </section>
+          </div>
+          <div class="introa">
+            <h2>自由実習</h2>
+            <p>
+              この日は午前組と午後組で<br>別れており、自習をしている人は<br>少ないです。
+              ですがやはり課題の<br>提出前には人が集まっています。
+            </p>
+          </div>
+        </section>
         </section>
         <section class="fri day" id="fri">
           <h2>金曜日<small><small>~Friday~</small></small></h2>
-          <div class="circle class">授業</div>
-          <div class="circle afsc">放課後</div>
+          <div class="circle class" onclick="clasOpen(4)">授業</div>
+          <div class="circle afsc" onclick="afskOpen(4)">放課後</div>
+          <div class="introc">
+            <section>
+              <h2>Javascript</h2>
+              <p>
+                このサイトでも使われている<br>コンテンツに動きをつける<br>
+                大切な言語です。<br>これができるかできないかで<br>仕事の名前や難易度が<br>変わります。<br>
+                例年難しくて皆が苦労している<br>悪魔の授業です。(笑)
+              </p>
+            </section>
+            <section>
+              <h2>HR</h2>
+              <p>
+                一週間の連絡事項や<br>キャリアアセンターの<br>職員さんが来てキャリアのお話を<br>してくれます。
+              </p>
+            </section>
+            <section>
+              <h2>Webデザイン技法<br>/チーム制作</h2>
+              <p>
+                1年生の前期のうちは<br>ワークショップや<br>聞いて考える授業が多いです。<br>
+                金曜日の憂鬱な時間も<br>先輩と一緒に楽しんで<br>学びを深めることができます。
+              </p>
+            </section>
+          </div>
+          <div class="introa">
+            <h2>オープン実習</h2>
+            <p>
+              水曜日と一緒で先生が<br>実習室にいます。<br>
+              Jsの質問や教え合いをするなど<br>活発に活動している様子が<br>
+              毎週見て取れます。
+            </p>
+          </div>
+        </section>
         </section>
       </div>
     </div>
