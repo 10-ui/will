@@ -6,7 +6,7 @@
 /*
 Common
 */
-$bodyColor: #00a5be;
+$bodyColor: #64c0fa;
 $mainColor: #4169e1;
 $accentColor:#fa527d;
 
@@ -76,16 +76,16 @@ img {
 .menu-list {
   text-align: center;
   list-style-type: none;
-  margin: 5.1rem 0 1rem;
+  margin: 4.9rem 0 1rem;
   padding: 0;
   font-family: 'Zen Maru Gothic', sans-serif;
   font-weight: bold;
   font-size: 120%;
   li {
-    border-top: #fff 1px solid;
+    border-top: #fff 2px solid;
     padding: 1.7rem 0;
     &:last-child {
-    border-bottom: #fff 1px solid;
+    border-bottom: #fff 2px solid;
     }
     a {
       // color: $bodyColor;

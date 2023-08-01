@@ -24,6 +24,7 @@ let notcurrentnums = days.filter(function(value){
 })
 
 async function classdispflex(){
+  circlecs[i].style.position = 'absolute';
   circlecs[i].style.top = '20%';
   circlecs[i].style.right = '15%';
   intro[i].style.display = 'none';
@@ -32,6 +33,7 @@ async function classdispflex(){
 }
 
 async function afterschooldispflex(){
+  circleas[i].style.position = 'absolute';
   circleas[i].style.top = '60%';
   circleas[i].style.right = '53%';
   introa[i].style.display = 'none';
@@ -104,6 +106,7 @@ async function close() {
 }
 
 function clasOpen(x){
+  circlecs[x].style.position = "fixed";
   circleas[x].style.display = 'none';
   circlecs[x].style.top = '5%';
   circlecs[x].style.right = '5%';
@@ -116,6 +119,7 @@ function clasOpen(x){
 }
 
 function afskOpen(x){
+  circleas[x].style.position = "fixed";
   circlecs[x].style.display= 'none';
   circleas[x].style.top = '5%';
   circleas[x].style.right = '5%';
