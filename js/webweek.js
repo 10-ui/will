@@ -32,6 +32,7 @@ async function classdispflex(){
   circleas[i].style.display = 'flex';
 }
 
+
 async function afterschooldispflex(){
   circleas[i].style.position = 'absolute';
   circleas[i].style.top = '60%';
